@@ -16,7 +16,4 @@ resource "ns1_zone" "example_zone" {
 
   nx_ttl = 3600
 
-  meta = {
-    "source" = "terraform"
   }
-}
