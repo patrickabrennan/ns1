@@ -12,14 +12,12 @@ provider "ns1" {
 }
 
 resource "ns1_zone" "hashicorp-ns1-domain" {
-  zone = "hashicorpns1.com"
-
+  zone   = "hashicorpns1.com"
   nx_ttl = 3600
-
-  }
+}
 
 resource "ns1_record" "www" {
-  zone    = ns1_zone.hashicorpns1.zone
+  zone    = ns1_zone.hashicorp-ns1-domain.zone
   domain  = "www.hashicorpns1.com"
   type    = "A"
   answers = [
