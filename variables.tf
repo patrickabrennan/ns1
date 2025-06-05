@@ -3,3 +3,7 @@ variable "ns1_api_key" {
   type        = string
   sensitive   = true
 }
+
+variables "ns1_record" {
+  type        = string 
+}
