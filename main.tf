@@ -17,13 +17,12 @@ resource "ns1_zone" "hashicorp-ns1-domain" {
 }
 
 resource "ns1_record" "www" {
-  zone    = ns1_zone.hashicorp-ns1-domain.zone
-  domain  = "www.hashicorpns1.com"
-  type    = "A"
-  answers = [
-    {
-      answers = "192.0.2.1"
-    }
-  ]
-  ttl = 3600
+  zone   = ns1_zone.hashicorp-ns1-domain.zone
+  domain = "www.hashicorpns1.com"
+  type   = "A"
+  ttl    = 3600
+
+  answers {
+    answer = "192.0.2.1"
+  }
 }
