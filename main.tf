@@ -22,7 +22,7 @@ resource "ns1_record" "www" {
   type    = "A"
   answers = [
     {
-      answer = "192.0.2.1"
+      answers = "192.0.2.1"
     }
   ]
   ttl = 3600
