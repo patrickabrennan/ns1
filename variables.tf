@@ -4,6 +4,3 @@ variable "ns1_api_key" {
   sensitive   = true
 }
 
-variable "ns1_record" {
-  type        = string 
-}
