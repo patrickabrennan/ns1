@@ -11,8 +11,8 @@ provider "ns1" {
   apikey = var.ns1_api_key
 }
 
-resource "ns1_zone" "example_zone" {
-  zone = "patabrennnan.com"
+resource "ns1_zone" "hashicorp-ns1-domain" {
+  zone = "hashicorpns1.com"
 
   nx_ttl = 3600
 
