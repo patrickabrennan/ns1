@@ -8,10 +8,6 @@ terraform {
 }
 
 provider "ns1" {
-  # Configuration options
-}
-
-provider "ns1" {
   apikey = var.ns1_api_key
 }
 
