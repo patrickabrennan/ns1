@@ -17,3 +17,15 @@ resource "ns1_zone" "hashicorp-ns1-domain" {
   nx_ttl = 3600
 
   }
+
+resource "ns1_record" "www" {
+  zone    = ns1_zone.hashicorpns1.zone
+  domain  = "www.hashicorpns1.com"
+  type    = "A"
+  answers = [
+    {
+      answer = "192.0.2.1"
+    }
+  ]
+  ttl = 3600
+}
