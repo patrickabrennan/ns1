@@ -12,7 +12,7 @@ provider "ns1" {
 }
 
 resource "ns1_zone" "example_zone" {
-  zone = "example.com"
+  zone = "patabrennnan.com"
 
   nx_ttl = 3600
 
