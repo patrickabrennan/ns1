@@ -1,14 +1,18 @@
 terraform {
   required_providers {
     ns1 = {
-      source  = "ns1-terraform/ns1"
-      version = "2.6.4"  # Check for latest version
+      source = "ns1-terraform/ns1"
+      version = "2.6.4"
     }
   }
 }
 
 provider "ns1" {
-  api_key = var.ns1_api_key
+  # Configuration options
+}
+
+provider "ns1" {
+  apikey = var.ns1_api_key
 }
 
 resource "ns1_zone" "example_zone" {
