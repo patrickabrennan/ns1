@@ -2,7 +2,7 @@ terraform {
   required_providers {
     ns1 = {
       source  = "ns1-terraform/ns1"
-      version = "1.0.7"  # Check for latest version
+      version = "2.6.4"  # Check for latest version
     }
   }
 }
